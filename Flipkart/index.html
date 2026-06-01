@@ -1,132 +1,343 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-</head>
 
-<body>
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+  </head>
+
+  <body>
     <header>
-        
-        <nav class="top-nav">
-            <div class="top-nav-left">
-                <button id="flip" class="button1">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Flipkart</span>
-                </button>
+      <nav class="top-nav">
+        <div class="top-nav-left">
+          <button id="flip" class="button1">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Flipkart</span>
+          </button>
 
-                <button id="travel" class="button1">
-                    <i class="fa-solid fa-plane"></i>
-                    Travel
-                </button>
-            </div>
+          <button id="travel" class="button1">
+            <i class="fa-solid fa-plane"></i>
+            Travel
+          </button>
+        </div>
 
-            <div class="top-nav-right">
-                <button id="location" class="button1">
-                    <i class="fa-solid fa-location-crosshairs"></i>
-                    Vadodara
-                </button>
-            </div>
-        </nav>
+        <div class="top-nav-right">
+          <button id="location" class="button1">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            Vadodara
+          </button>
+        </div>
+      </nav>
 
-        <nav class="search-nav">
-            <!-- <div class="logo">
+      <nav class="search-nav">
+        <!-- <div class="logo">
                 Flipkart
             </div> -->
 
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search for Products, Brands and More" />
-            </div>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+          />
+        </div>
 
-            <div class="nav-links">
-                <button class="nav-btn">
-                    <i class="fa-solid fa-user"></i>
-                    Login
-                </button>
+        <div class="nav-links">
+          <button class="nav-btn">
+            <i class="fa-solid fa-user"></i>
+            Login
+          </button>
 
-                <button class="nav-btn">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    Cart
-                </button>
-            </div>
-        </nav>
+          <button class="nav-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+          </button>
+        </div>
+      </nav>
 
-        <nav class="category-nav">
-            <div class="icon-box">
-                <div><i class="fa-solid fa-mobile"></i></div>
-                <span>Mobile</span>
-            </div>
-            <div class="icon-box">b2</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b4</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-            <div class="icon-box">b3</div>
-        </nav>
+      <nav class="category-nav">
+        <div class="icon-box">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>Mobiles</span>
+        </div>
 
+        <div class="icon-box">
+          <i class="fa-solid fa-tv"></i>
+          <span>Electronics</span>
+        </div>
+
+        <div class="icon-box">
+          <i class="fa-solid fa-shirt"></i>
+          <span>Fashion</span>
+        </div>
+
+        <div class="icon-box">
+          <i class="fa-solid fa-couch"></i>
+          <span>Furniture</span>
+        </div>
+
+        <div class="icon-box">
+          <i class="fa-solid fa-blender"></i>
+          <span>Appliances</span>
+        </div>
+
+        <div class="icon-box">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span>Grocery</span>
+        </div>
+
+        <div class="icon-box">
+          <i class="fa-solid fa-book"></i>
+          <span>Books</span>
+        </div>
+
+        <div class="icon-box">
+          <i class="fa-solid fa-gamepad"></i>
+          <span>Toys</span>
+        </div>
+      </nav>
     </header>
 
     <main>
-
-        <div class="banners-container">
-            <div class="banner banner-1">Ad Banner 1</div>
-            <div class="banner banner-2">Ad Banner 2</div>
-            <div class="banner banner-3">Ad Banner 3</div>
+      <br>
+      <div class="scroll-title">Tranding Products</div>
+      <div class="banners-container">
+        <div class="banner banner-1">
+          <img
+            src="https://www.shutterstock.com/image-vector/sunscreen-product-banner-ads-on-260nw-1509241181.jpg"
+            alt=""
+          />
         </div>
+        <div class="banner banner-2">
+          <img
+            src="https://www.shutterstock.com/image-vector/sunscreen-product-banner-ads-on-260nw-1509241181.jpg"
+            alt=""
+          />
+        </div>
+        <div class="banner banner-3">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToQx65RVUoRoK15CMILz82ZueZvLXpGsT-Ag&s"
+            alt=""
+          />
+        </div>
+      </div>
 
-        <div class="scroll-section">
+      <br>
+      <div class="scroll-section">
 
-            <div class="scroll-title">
-                People also viewed
+        <div class="scroll-title">People also viewed</div>
+
+        <div class="scroll-wrapper">
+          <div class="product-row">
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://foodsure.co.in/wp-content/uploads/2024/12/Supeyou-Protein-Wafers-2.jpg" alt="" />
             </div>
 
-            <div class="scroll-wrapper">
-
-                <div class="product-row">
-
-                    <div class="product-card">
-                        <div class="product-title">Ad Banner 1</div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-title">Ad Banner 2</div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-title">Ad Banner 3</div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-title">Ad Banner 4</div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-title">Ad Banner 5</div>    
-                    </div>
-
-                </div>
-
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://img.freepik.com/free-vector/blue-packages-cosmetics-set_1284-12682.jpg?semt=ais_hybrid&w=740&q=80" alt="" />
             </div>
 
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://wwd.com/wp-content/uploads/2024/05/best-tiktok-beauty-products-elf-halo-glow.jpg?w=1000" alt="" /> 
+            </div>
+
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://assets.hyperpure.com/data/images/products/7612d6a0310e57fe556f81a1537ff5bc.jpg" alt="" />
+            </div>
+
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83fEOJOaWDx9a_SS6NTYFqSCJPQjOGBlHdQ&s" alt="" />
+            </div>
+          </div>
         </div>
+
+      </div>
+
+      <br>
+      <h2>Brands in Spotlight</h2>
+      <div id="ad-container" class="card-wrapper">
+        <div class="ad-card" id="card-projector">
+          <div class="image-area">
+            <span class="ad-badge">AD</span>
+            <img class="product-img" src="https://www.maizic.com/cdn/shop/files/9_1d5fc0e2-52da-4fac-9df4-bec935436e6c_1200x1200.png?v=1738827365" alt="Smart Projector" />
+          </div>
+          <div class="offer-banner banner-orange">Shop now</div>
+          <h3 class="product-title">Smart projector</h3>
+        </div>
+
+        <div class="ad-card" id="card-bottle">
+          <div class="image-area">
+            <span class="ad-badge">AD</span>
+            <img class="product-img" src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/9b42d770-6a7f-446e-ae8a-9a819e105081.__CR133,0,600,800_PT0_SX300_V1___.jpg" alt="Stainless Steel Bottle" />
+          </div>
+          <div class="offer-banner banner-orange">Up to 20% Off</div>
+          <h3 class="product-title">Stainless Steel Bottle</h3>
+        </div>
+
+        <div class="ad-card" id="card-luggage">
+          <div class="image-area">
+            <span class="ad-badge">AD</span>
+            <img class="product-img" src="https://i.pinimg.com/736x/12/8e/3d/128e3de7c2f9840a6f698b1cc6cab1f0.jpg" alt="Sturdy Luggage" />
+          </div>
+          <div class="offer-banner banner-orange">Min. 25% Off</div>
+          <h3 class="product-title">Green Tea</h3>
+        </div>
+
+      </div>
+
+      <div id="ad-container" class="card-wrapper">
+
+        <div class="ad-card" id="card-projector">
+          <div class="image-area">
+            <span class="ad-badge">AD</span>
+            <img class="product-img" src="https://5.imimg.com/data5/SELLER/Default/2023/11/358971900/VS/NI/AM/90162095/ayurvedic-ads-500x500.png" alt="Smart Projector" />
+          </div>
+          <div class="offer-banner banner-orange">Grab now</div>
+          <h3 class="product-title">Stay Healthy</h3>
+        </div>
+
+        <div class="ad-card" id="card-bottle">
+          <div class="image-area">
+            <span class="ad-badge">AD</span>
+            <img class="product-img" src="https://img.magnific.com/premium-vector/marketing-ads-post-products-eps-file_774564-129.jpg" alt="Stainless Steel Bottle" />
+          </div>
+          <div class="offer-banner banner-orange">Up to 20% Off</div>
+          <h3 class="product-title">Face Wash</h3>
+        </div>
+
+        <div class="ad-card" id="card-luggage">
+          <div class="image-area">
+            <span class="ad-badge">AD</span>
+            <img class="product-img" src="https://img.clevup.in/352617/casual-shoes-1707911015192_SKU-6546_0.jpg?width=600&format=webp" alt="Sturdy Luggage" />
+          </div>
+          <div class="offer-banner banner-orange">Min. 75% Off</div>
+          <h3 class="product-title">Sturdy & stylish</h3>
+        </div>
+
+      </div>
+
+      <div class="scroll-section">
+
+        <div class="scroll-title">Electric Appliances</div>
+
+        <div class="scroll-wrapper">
+          <div class="product-row">
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://cdn.pixabay.com/photo/2011/04/03/13/31/iron-6046_640.jpg" alt="" />
+            </div>
+
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://media.gettyimages.com/id/513419717/photo/home-appliance.jpg?s=612x612&w=gi&k=20&c=anHa8mtUq4NljpZvCilJe-E5w8jO9ViUYiZyXc1fZPQ=" alt="" />
+            </div>
+
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://www.domesticappliances.philips.co.in/cdn/shop/files/NA120-00_1_79aacc75-2de5-4a36-b608-06ddfb1523ca.jpg?v=1756195822" alt="" /> 
+            </div>
+
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://assets.hyperpure.com/data/images/products/7612d6a0310e57fe556f81a1537ff5bc.jpg" alt="" />
+            </div>
+
+            <div class="product-card">
+              <div class="product-title"></div>
+              <img src="https://glenindia.com/cdn/shop/files/OTG-4_270079fe-0605-46c7-8915-6d9222fe93c7_512x512.jpg?v=1770201563" alt="" />
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </main>
 
-    <footer>
-        
-    </footer>   
+    <footer class="footer">
 
-</body>
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>ABOUT</h4>
+          <ul>
+            <li>Don't contact Us</li>
+            <li>About Us(Mind your own Business)</li>
+            <li>Careers(Wasted)</li>
+            <li>Press</li>
+            <li>Corporate Information(Don't click!!)</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>GROUP COMPANIES</h4>
+          <ul>
+            <li>Myntra - Tantra</li>
+            <li>Cleartrip - Hehehehe</li>
+            <li>Shopsy</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>HELP(Don't ask irrelevent things)</h4>
+          <ul>
+            <li>Payments(Always Accepted)</li>
+            <li>Shipping</li>
+            <li>Cancellation & Returns</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>CONSUMER POLICY</h4>
+          <ul>
+            <li>Terms Of Use</li>
+            <li>Security</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+
+        <div class="footer-column address">
+          <h4>Mail Us:</h4>
+          <p>
+            Koi_Reply_nahi_milega@gmail.com,<br><br>
+            Filipili Kart Private Limited,<br />
+            Uganda, Earth,<br />
+            Universe
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>Become a Seller</p>
+        <p>Advertise</p>
+        <p>Gift Cards</p>
+        <p>Help Center</p>
+
+        <p class="copyright">© 2026 Filipili kart Clone</p>
+      </div>
+
+    </footer>
+  </body>
 </html>
