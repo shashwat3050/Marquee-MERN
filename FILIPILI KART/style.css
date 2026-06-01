@@ -2,7 +2,7 @@
 
 :root {
     --primary: #2874f0;
-    --yellow: #ed8888;
+    --yellow: #f3dada;
     --dark: #1d1d1d;
     --cards-font-family: "Inter", sans-serif;
 }
@@ -142,7 +142,7 @@ main {
 /* ------------for the middle ad-banner------------- */
 
 .banners-container {
-    background-color: #9bebac;
+    background-color: #c9f5d2;
     padding: 15px;
     border-radius: 5px;
     display: flex;
