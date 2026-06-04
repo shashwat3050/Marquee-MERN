@@ -1,0 +1,69 @@
+#gd-c {
+    height: 100%;
+    width: 468px;
+    border: 1px solid rgb(149, 149, 3);
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #f8f9f5;
+    gap: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+
+    /* justify-items: center;
+        align-items: center;
+    
+        justify-content: center;
+        align-content: center; */
+}
+
+/* .gd-i {
+    display: flex;
+    background-color: #f47f7f;
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+} */
+
+.gd-i-1{
+    grid-column: 1;
+    grid-row: 1 /-1;
+    background-color: red;
+}
+.gd-i-2{
+    grid-row: 1;
+    grid-column: 2 / 4;
+    background-color: green;
+}
+
+.gd-i-6 {
+    grid-column: 4;
+    grid-row: -3 / -1;
+    background-color: green;
+}
+.gd-i-6{
+    background-color: blue;
+}
+.gd-i-5{
+    background-color: rgb(98, 200, 130);
+}
+.gd-i-7{
+    background-color: rgb(98, 200, 130);
+}
+.gd-i-3{
+    background-color: rgb(98, 200, 130);
+}
+.gd-i-4{
+    background-color: rgb(111, 172, 208);
+}
+.gd-i-8{
+    background-color: rgb(111, 172, 208);
+}
+

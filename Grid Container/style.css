@@ -9,22 +9,29 @@ html,
 body {
     height: 100vh;
     width: 100vw;
+    margin: 50px;
 }
 
 #grid-container {
     height: 600px;
-    width: 50%;
+    width: 30%;
     border: 1px solid rgb(149, 149, 3);
     border-radius: 5px;
     background-color: #e9fe2a;
     gap: 20px;
 
     display: grid;
-    
-    /* grid-template-columns: 100px 100px; */
-    grid-template-columns: repeat(2, 1fr);
+
+    /* -----------to particulary give size to each rows */
+    /* grid-template-columns: 100px 100px; *
     /* grid-template-rows: 100px 100px 100px 100px; */
+
+    /* -----------to divide the pixels into a equal fractions  */
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+
+    /* -----------to divide the pixels into fractions */
+    /* grid-template-rows: 3fr 3fr 2fr 1fr; */
 
     justify-items: center;
     align-items: center;
@@ -37,12 +44,19 @@ body {
     display: flex;
     background-color: #f47f7f;
     border: 1px solid red;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     /* padding: 25px 0 0 25px; */
+    /* margin: 20px; */
     border-radius: 5px;
     justify-content: center;
     align-items: center;
 
     gap: 20px;
+
+    justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
 }
