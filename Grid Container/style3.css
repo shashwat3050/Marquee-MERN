@@ -1,0 +1,64 @@
+#gd-c {
+    height: 100%;
+    width: 600px;
+    border: 1px solid rgb(149, 149, 3);
+    border-radius: 5px;
+    border: 2px solid rgb(248, 190, 190);
+    background-color: #f8f9f5;
+    gap: 10px;
+    margin: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3
+    , 1fr);
+    grid-template-rows: 2fr 5fr 5fr 1fr
+
+    /* justify-items: center;
+        align-items: center;
+    
+        justify-content: center;
+        align-content: center; */
+}
+
+.gd-i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gd-i-1 {
+    background-color: aqua;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.gd-i-2 {
+    background-color: rgb(106, 206, 110);
+    grid-row: 2/4;
+    grid-column: 1;
+}
+
+.gd-i-3 {
+    background-color: rgb(49, 172, 255);
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.gd-i-4 {
+    background-color: rgb(170, 103, 242);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.gd-i-5 {
+    background-color: rgb(170, 103, 242);
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.gd-i-6 {
+    background-color: aqua;
+    grid-column: 1/4;
+    grid-row: 4;
+}
