@@ -1,0 +1,1 @@
+A daily learning repository documenting my journey through the MERN Stack (MongoDB, Express.js, React, and Node.js). This repository contains projects, concepts, code snippets, and hands-on practice as I build and strengthen my full-stack development skills.
