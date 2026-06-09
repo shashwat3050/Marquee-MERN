@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHub Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-gamepad"></i>
+          <h2>E-Sports Hub</h2>
+        </div>
+
+        <ul class="menu">
+          <li><i class="fa-solid fa-house"></i> Dashboard</li>
+          <li><i class="fa-solid fa-users"></i> Players</li>
+          <li><i class="fa-solid fa-crosshairs"></i> Matches</li>
+          <li><i class="fa-solid fa-trophy"></i> Tournaments</li>
+          <li><i class="fa-solid fa-dice"></i> Games</li>
+          <li><i class="fa-solid fa-chart-line"></i> Analytics</li>
+          <li><i class="fa-solid fa-comments"></i> Community</li>
+          <li><i class="fa-solid fa-gear"></i> Settings</li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <nav class="navbar">
+          <div class="nav-left">
+            <i class="fa-solid fa-bars"></i>
+            <h3>Gaming Dashboard</h3>
+          </div>
+
+          <div class="nav-right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <div class="notification">
+              <i class="fa-solid fa-bell"></i>
+              <span>5</span>
+            </div>
+
+            <div class="profile">
+              <img src="tom.jpg" alt="" />
+              <p>Shashwat</p>
+            </div>
+          </div>
+        </nav>
+
+        <section class="header">
+          <h1>Dashboard</h1>
+          <p>Welcome back Gamer 🎮</p>
+        </section>
+
+        <section class="cards">
+          <div class="card blue">
+            <h2>12,450</h2>
+            <p>Active Players</p>
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <div class="card green">
+            <h2>328</h2>
+            <p>Matches Today</p>
+            <i class="fa-solid fa-crosshairs"></i>
+          </div>
+
+          <div class="card orange">
+            <h2>2,104</h2>
+            <p>Tournaments</p>
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+
+          <div class="card red">
+            <h2>587</h2>
+            <p>Streamers Online</p>
+            <i class="fa-solid fa-video"></i>
+          </div>
+        </section>
+
+        <section class="dashboard-grid">
+          <div class="analytics">
+            <h3>Player Activity</h3>
+
+            <div class="graph">
+              <div class="bar" style="height: 60%"></div>
+              <div class="bar" style="height: 80%"></div>
+              <div class="bar" style="height: 50%"></div>
+              <div class="bar" style="height: 90%"></div>
+              <div class="bar" style="height: 70%"></div>
+              <div class="bar" style="height: 100%"></div>
+            </div>
+
+            <div class="months">
+              <span>Jan</span>
+              <span>Feb</span>
+              <span>Mar</span>
+              <span>Apr</span>
+              <span>May</span>
+              <span>Jun</span>
+            </div>
+          </div>
+
+          <div class="games-panel">
+            <h3>Popular Games</h3>
+
+            <div class="game">
+              <p>Valorant</p>
+              <div class="progress">
+                <div class="fill valorant"></div>
+              </div>
+            </div>
+
+            <div class="game">
+              <p>BGMI</p>
+              <div class="progress">
+                <div class="fill bgmi"></div>
+              </div>
+            </div>
+
+            <div class="game">
+              <p>Call of Duty</p>
+              <div class="progress">
+                <div class="fill cod"></div>
+              </div>
+            </div>
+
+            <div class="game">
+              <p>Minecraft</p>
+              <div class="progress">
+                <div class="fill minecraft"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="table-section">
+          <h3>Recent Matches</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Match ID</th>
+                <th>Game</th>
+                <th>Winner</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>M1024</td>
+                <td>Valorant</td>
+                <td>Team Alpha</td>
+                <td>Completed</td>
+              </tr>
+
+              <tr>
+                <td>M1025</td>
+                <td>BGMI</td>
+                <td>Squad X</td>
+                <td>Live</td>
+              </tr>
+
+              <tr>
+                <td>M1026</td>
+                <td>Call of Duty</td>
+                <td>Knight Riders</td>
+                <td>Scheduled</td>
+              </tr>
+
+              <tr>
+                <td>M1027</td>
+                <td>Minecraft</td>
+                <td>Block Kings</td>
+                <td>Completed</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
