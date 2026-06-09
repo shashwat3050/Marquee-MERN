@@ -34,7 +34,7 @@ body {
     outline: none;
 }
 h1{
-    color: #ff8c42;
+    color: #fe7b2a;
 }
 
 #gdc {
@@ -45,14 +45,14 @@ h1{
 
     border: 1px solid rgb(149, 149, 3);
     border-radius: 10px;
-    border: 2px solid rgb(248, 190, 190);
+    border: 2px solid rgb(255, 131, 131);
 
-    background-color: #f8f9f5;
+    background-color: rgb(255, 238, 238);
     gap: 10px;
     margin: 50px;
-    margin-top: 0;
+    margin-top: 15px;
 
-    grid-template-columns: repeat(4, 150px);
+    grid-template-columns: repeat(4, 150px);    
     grid-template-rows: repeat(3, 150px);
     padding: 30px 0 0 30px;
 }  
@@ -61,6 +61,7 @@ h1{
     width: min(420px, 100%);
     border: 1px solid rgba(15, 23, 42, 0.15);
     border-radius: 10px;
+    
 }
 
 .gdi img{
