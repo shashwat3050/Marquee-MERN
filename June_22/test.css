@@ -14,10 +14,9 @@ body {
 
 #main {
     display: grid;
-    height: 550px;
-    width: 900px;
+    height: 400px;
+    width: 750px;
     gap: 10px;
-    padding: 10px;
 
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1.5fr 1.5fr 1fr 1fr;
@@ -58,4 +57,5 @@ body {
 .box2,.box3,.box5,.box6{
     background-color: rgb(96, 255, 96);
     border: 1px solid green;
+    /* border-radius: 50%; */
 }
