@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #87ceeb 0%, #dff5ff 70%, #b6e388 70%, #6ab04c 100%);
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+/* Ground */
+.ground {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 6px;
+    background: #2d6a4f;
+}
+
+/* Ball */
+.ball {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: -180px;
+    bottom: 62px;
+    animation: rollBall 5s linear infinite;
+}
+
+.ball img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(8px 10px 8px rgba(0, 0, 0, 0.35));
+}
+
+/* Shadow */
+.ball::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    bottom: -18px;
+    width: 120px;
+    height: 18px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+@keyframes rollBall {
+
+    0% {
+        left: -180px;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        left: calc(100% + 180px);
+        transform: rotate(1440deg);
+    }
+
+}
