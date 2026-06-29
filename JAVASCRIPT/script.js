@@ -5,10 +5,10 @@ console.warn("text area");
 console.error("text area");
 console.groupEnd();
 
-console.table({name:'DoLand Trump', age:64, Type:'Pedophilic'});
+console.table({name:'Harsh', age:21, Type:'Genius'});
 
 function greet(){
-    console.warn("diwakar sapola");
+    console.warn("Hello!!");
 }
 
 greet();
