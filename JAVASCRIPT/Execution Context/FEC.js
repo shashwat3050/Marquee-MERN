@@ -1,0 +1,17 @@
+debugger;
+console.log('Global Execution Context Start');
+
+var globalvariable = 'I am a global Variable';
+
+console.log(globalvariable);
+console.log(greet());
+greet();
+
+console.log('Global Execution Context End');
+
+// Function Declaration
+function greet() {
+    var name = 'Hastag';
+    console.log('Inside Global Function');
+    return 1;
+     }
