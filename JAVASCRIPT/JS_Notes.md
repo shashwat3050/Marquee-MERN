@@ -15,7 +15,7 @@ JavaScript is one of the core technologies of the web, along with HTML and CSS. 
 - Single Page Applications (SPA)
 - Creating APIs & Web Services (Node.js, Deno)
 
----
+---------------------------------
 
 ## 3. Web Browser Architecture & Rendering Engine
 
@@ -34,7 +34,7 @@ Think of a browser (Chrome, Firefox, Edge, Safari) as a team where each member h
 | **5. JavaScript Engine** | Executes JavaScript code to make webpages interactive and dynamic | Clicking a button changes text without reloading the page |
 | **6. UI Backend** | Draws browser controls using the operating system | Displays buttons, scrollbars, text boxes, and menus |
 
----
+---------------------------------
 
 ## 4. How to Run JavaScript?
 
@@ -46,13 +46,13 @@ Console (document/window Environment)
 
 **Local:** Node.js Environment
 
----
+---------------------------------
 
 ## 5. What Is Hoisting?
 
 Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase. This means you can use functions and variables before they are declared in the code.
 
----
+---------------------------------
 
 ## 6. Three Ways to Declare Variables
 
@@ -82,7 +82,7 @@ Variables declared with `var`:
 - Cannot start with a number
 - Cannot be a reserved keyword (let, class, return, etc.)
 
----
+---------------------------------
 
 ## 7. Data Types
 
@@ -115,7 +115,7 @@ The `typeof` operator is used to determine the data type of a value or variable.
 - Undefined: `typeof undefined === "undefined"`
 - Functions: `typeof function(){} === "function"`
 
----
+--------------------------------
 
 ## 8. JavaScript Execution Context
 
@@ -129,7 +129,7 @@ The Execution Context in JavaScript is a conceptual environment where code is pa
 1. **Creation Phase / Memory Phase:** Memory allocation — variables declared with `var` are initialized to `undefined`, while function declarations are stored in memory. This process is known as Hoisting.
 2. **Execution Phase:** The JavaScript engine (v8) executes the code line by line, updating variable values and executing functions.
 
----
+--------------------------------
 
 ## 9. Special Operators
 
@@ -149,7 +149,7 @@ Optional chaining (`?.`) is an ES2020 feature that lets you:
 - Access array elements
 - Call functions without throwing an error if an intermediate value is `null` or `undefined` — instead, it returns `undefined`.
 
----
+--------------------------------
 
 ## 10. What Is a Function
 
@@ -177,7 +177,7 @@ The term "first-class" (or first-class citizen) refers to the fact that function
 
 - **Rest Operator (`...`):** Collects multiple values into a single array (or object).
 
----
+---------------------------------
 
 ## 11. Return Value and Early Return in JS
 
@@ -205,3 +205,25 @@ function add(a, b) {
 ```
 
 **Impure Function:** Impure functions may produce different outputs for the same input and can modify external state.
+Example:
+```js
+let total = 0;
+function addToTotal (x) {
+  total += x; // modifies external state
+  return total;
+}
+```
+
+
+### Factory Function in JavaScript
+A factory function is a function that returns a new object each time it is called. factory functions makes easier to manage multiple objects with similar properties and behaviors.
+
+### What is a Constructor Function?
+A constructor function is a special type of function in JavaScript that's used to create and initialize new objects. constructor functions are designed to set up an object's initial state. They define the properties (data) and methods (behaviors) that each instance of the object will have.
+
+### Key Characteristics of Constructor Functions
+1. *Naming Convention* : By convention, constructor functions are named with a capital letter. This helps differentiate them from regular functions.
+
+2. *Usage of this Keyword*: Constructor functions use the this keyword to refer to the new object instance being created.
+
+3. *new Keyword*: Constructor functions are called with the new keyword. This creates a new, empty object, and this inside the function will refer to that object.
