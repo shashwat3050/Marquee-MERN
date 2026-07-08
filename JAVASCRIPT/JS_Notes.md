@@ -226,4 +226,4 @@ A constructor function is a special type of function in JavaScript that's used t
 
 2. *Usage of this Keyword*: Constructor functions use the this keyword to refer to the new object instance being created.
 
-3. *new Keyword*: Constructor functions are called with the new keyword. This creates a new, empty object, and this inside the function will refer to that object.
+3. *new Keyword*: Constructor functions are called with the new keyword. This creates a new, empty object, and this inside the function will refer to that object.  
