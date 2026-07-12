@@ -213,8 +213,7 @@ function addToTotal (x) {
   return total;
 }
 ```
-
-
+-------------------------------------
 ### Factory Function in JavaScript
 A factory function is a function that returns a new object each time it is called. factory functions makes easier to manage multiple objects with similar properties and behaviors.
 
@@ -226,4 +225,55 @@ A constructor function is a special type of function in JavaScript that's used t
 
 2. *Usage of this Keyword*: Constructor functions use the this keyword to refer to the new object instance being created.
 
-3. *new Keyword*: Constructor functions are called with the new keyword. This creates a new, empty object, and this inside the function will refer to that object.  
+3. *new Keyword*: Constructor functions are called with the new keyword. This creates a new, empty object, and this inside the function will refer to that object.
+
+-------------------------------------
+### Generator Function
+A generator function is defined using the function syntax and allows execution to be paused and resumed. **Unlike regular functions that return a single value**, generator functions return a generator object, which is an iterator conforming to the iterable protocol.
+```js
+function simpleGenerator() {
+vield 'Hello';
+vield 'World';
+}
+
+const iterator = simpleGenerator();
+console.log(iterator.next().value); 
+console.log(iterator.next().value); 
+console.log(iterator.next().done); 
+```
+-------------------------------------
+## 12.  Most Special Methods
+1. ### map(): 
+            map Method is used to create and return a new array by applying a callback
+            function to each elements of an array.
+```js
+const newArray = array.map((element, index, array) => { I
+return modifiedElement;
+});
+```
+
+2. ### reduce(): 
+            reduce methods is used to transform an array into a single value, with callback functions having two argument accumulator, currentValue
+```js
+const result = array.reduce((accumulator, currentValue, index,
+array) => {
+return newAccumulator;
+}, initialValue);
+```
+
+3. ### forEach(): 
+            forEach Method is used to iterate over elements of an array and * doesn't return a new array.
+```js
+array.forEach((element, index, array) => { 
+  // your code here
+});
+```
+4. ### find(): 
+The find() method returns the first element in an array that satisfies a provided test function, or undefined if no element matches.
+
+5. ### filter(): 
+            Creates a new array with only all the elements that pass a test condition and else returned empty array.
+```js
+const filteredArray = array.filter((element, index, array) => { return condition;
+});
+```
