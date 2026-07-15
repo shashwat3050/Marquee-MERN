@@ -1,3 +1,4 @@
+debugger;
 let n=5; //global variable declaration
 
 function add(){
