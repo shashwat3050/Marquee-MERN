@@ -14,7 +14,7 @@ class Bank {
     }
 
     constructor(name, mobile, email, amount = 0) {
-        this.__accountHolderName = name;
+        this._accountHolderName = name;
         this.mobile = mobile;
         this._email = email;
         this.balance = amount;
@@ -45,7 +45,10 @@ class Bank {
             // console.log(InsufficientFundEmail.call(this, amount));
         } else {
             this.balance -= amount;
-            // sendWithdrawEmail.call(this, amount);
+            const main = sendWithdrawEmail.call(this, amount);
+            console.log(main);
+            
+            
         }
     }
     getPercentage() {
@@ -62,9 +65,9 @@ class Bank {
     /***
      *
      * set propertyname(){
-     * this._propertyName
+     *     this._propertyName
   
-  }
+       }
      */
     set accountHolderName(value) {
         this._accountHolderName = value;
@@ -74,5 +77,25 @@ class Bank {
     }
 }
 
+//this email is to be send when any amount is withdrawn
+function sendWithdrawEmail(amount) {
+    return `To ${this.accountHolderName},
+    This is to inform you that amount of Rs.${amount} is withdrawn.`;
+}
+
+//email for the insufficient balance
+function insufficientFundEmail(amount) {
+    return `To ${this.accountHolderName},
+    You're trying to withdraw Rs.${amount}, but you don't have sufficient balance.`;
+}
+
+
+//email for any money deposited
+function sendDepositEmail(amount) {
+    return `To ${this.accountHolderName},
+    This is to inform you that amount of Rs.${amount} is deposited.`;
+}
+
+
 let obj1 = new Bank('Raj', '5959561000', 'raj45@gmail.com', 522000);
-console.log(Bank.getBankCode());
+obj1.withdraw(1000);    
