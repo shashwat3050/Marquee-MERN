@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/8019/8019152.png"
+      type="image/x-icon"
+    />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="todo-container">
+      <header>
+        <h2>My Todo List</h2>
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/8019/8019152.png"
+          width="50"
+          height="50"
+          alt="todo list logo"
+        />
+      </header>
+
+      <!-- Input Container -->
+      <div class="input-container">
+        <input type="text" id="input-box" placeholder="Enter a new task..." />
+
+        <button id="add-btn">+ Add Item</button>
+      </div>
+
+      <ul id="list">
+        
+        <li>
+          <div class="btn-group">
+            <button class="complete-btn"></button>
+            <button class="remove-btn"></button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="btn-group">
+            <button class="complete-btn"></button>
+            <button class="remove-btn"> </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+   
+  </body>
+</html>

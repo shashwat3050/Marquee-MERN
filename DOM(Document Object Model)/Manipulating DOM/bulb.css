@@ -1,0 +1,28 @@
+#main {
+    height: 160px;
+    width: 160px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3c1c1;
+}
+
+.bulb {
+    height: 140px;
+    width: 140px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.bulb.off {
+    background-color: #777777;
+    box-shadow: none;
+}
+
+.bulb.on {
+    background-color: #ffeb3b;
+    border-color: #ffeb3b;
+}
