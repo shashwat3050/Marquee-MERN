@@ -35,7 +35,10 @@ body {
     background-color: rgb(10, 187, 206);
 }
 
-#div1, #div2, #div3, #div4 {
+#div1,
+#div2,
+#div3,
+#div4 {
     display: flex;
     justify-content: center;
     align-items: center;
