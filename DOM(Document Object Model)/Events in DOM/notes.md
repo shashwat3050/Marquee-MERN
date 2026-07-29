@@ -63,27 +63,27 @@ Here,
 
 ## Mouse Events
 
-| Event | Description |
-|--------|-------------|
-| click | Fires when an element is clicked. |
-| dblclick | Fires on double click. |
-| mousedown | Mouse button is pressed. |
-| mouseup | Mouse button is released. |
-| mouseenter | Mouse enters an element. |
-| mouseleave | Mouse leaves an element. |
-| mouseover | Mouse moves over an element or its children. |
-| mouseout | Mouse leaves an element or its children. |
-| mousemove | Mouse moves inside an element. |
-| contextmenu | Right-click event. |
+| Event       | Description                                  |
++-------------+----------------------------------------------+
+| click       | Fires when an element is clicked.            |
+| dblclick    | Fires on double click.                       |
+| mousedown   | Mouse button is pressed.                     |
+| mouseup     | Mouse button is released.                    |
+| mouseenter  | Mouse enters an element.                     |
+| mouseleave  | Mouse leaves an element.                     |
+| mouseover   | Mouse moves over an element or its children. |
+| mouseout    | Mouse leaves an element or its children.     |
+| mousemove   | Mouse moves inside an element.               |
+| contextmenu | Right-click event.                           |
 
 ---
 
 ## Keyboard Events
 
-| Event | Description |
-|--------|-------------|
-| keydown | Key is pressed. |
-| keyup | Key is released. |
+| Event   | Description
+|---------+------------------
+| keydown | Key is pressed.
+| keyup   | Key is released.
 
 ---
 

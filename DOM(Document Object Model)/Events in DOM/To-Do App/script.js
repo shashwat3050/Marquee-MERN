@@ -11,64 +11,45 @@ function addTask() {
         return;
     }
 
-    // Create <li>
+    // Create list item elements
     const li = document.createElement("li");
-
-    // Create <span>
     const taskText = document.createElement("span");
     taskText.innerText = taskValue;
 
-    // Create button group
     const btnGroup = document.createElement("div");
     btnGroup.className = "btn-group";
 
-    // Create Complete button
     const completeBtn = document.createElement("button");
     completeBtn.className = "complete-btn";
     completeBtn.innerText = "Complete";
 
-    // Create Remove button
     const removeBtn = document.createElement("button");
     removeBtn.className = "remove-btn";
     removeBtn.innerText = "Remove";
 
-    // Append buttons to button group
+    // Assemble elements
     btnGroup.appendChild(completeBtn);
     btnGroup.appendChild(removeBtn);
-
-    // Append span and button group to li
     li.appendChild(taskText);
     li.appendChild(btnGroup);
-
-    // Add li to ul
     todoList.appendChild(li);
 
-    // Clear input
+    // Clear input field
     taskInput.value = "";
 
-    // Complete button functionality
+    // Event: Toggle task completion
     completeBtn.addEventListener("click", function () {
-        taskText.classList.toggle("completed");
+        taskText.style.textDecoration='line-through';
+        completeBtn.style.display = 'none';
+        completeBtn.remove();
 
-        if (taskText.classList.contains("completed")) {
-            completeBtn.innerText = "Completed";
-        } else {
-            completeBtn.innerText = "Complete";
-        }
     });
 
-    // Remove button functionality
+    // Event: Remove task
     removeBtn.addEventListener("click", function () {
         li.remove();
     });
 }
 
-// Add task on button click
+// Event Listener for adding tasks (Button Click Only)
 addBtn.addEventListener("click", addTask);
-
-// Add task on pressing Enter
-taskInput.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-        addTask();
-    }
-});
