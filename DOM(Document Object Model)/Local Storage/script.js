@@ -1,0 +1,1 @@
+localStorage('user1', 'Shashwat');

@@ -76,40 +76,410 @@ Here,
 | mousemove   | Mouse moves inside an element.               |
 | contextmenu | Right-click event.                           |
 
+
+# Code Examples -
+
+---
+
+## 1. click
+
+Occurs when an element is clicked.
+
+```javascript
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+    console.log("Button Clicked");
+});
+```
+
+---
+
+## 2. dblclick
+
+Occurs when an element is double-clicked.
+
+```javascript
+btn.addEventListener("dblclick", () => {
+    console.log("Double Clicked");
+});
+```
+
+---
+
+## 3. mousedown
+
+Occurs when a mouse button is pressed.
+
+```javascript
+btn.addEventListener("mousedown", () => {
+    console.log("Mouse Button Pressed");
+});
+```
+
+---
+
+## 4. mouseup
+
+Occurs when a pressed mouse button is released.
+
+```javascript
+btn.addEventListener("mouseup", () => {
+    console.log("Mouse Button Released");
+});
+```
+
+---
+
+## 5. mouseenter
+
+Occurs when the mouse enters an element.
+
+```javascript
+const box = document.getElementById("box");
+
+box.addEventListener("mouseenter", () => {
+    console.log("Mouse Entered");
+});
+```
+
+---
+
+## 6. mouseleave
+
+Occurs when the mouse leaves an element.
+
+```javascript
+box.addEventListener("mouseleave", () => {
+    console.log("Mouse Left");
+});
+```
+
+---
+
+## 7. mouseover
+
+Occurs when the mouse moves over an element or one of its children.
+
+```javascript
+box.addEventListener("mouseover", () => {
+    console.log("Mouse Over");
+});
+```
+
+---
+
+## 8. mouseout
+
+Occurs when the mouse leaves an element or one of its children.
+
+```javascript
+box.addEventListener("mouseout", () => {
+    console.log("Mouse Out");
+});
+```
+
+---
+
+## 9. mousemove
+
+Occurs whenever the mouse moves inside an element.
+
+```javascript
+box.addEventListener("mousemove", (e) => {
+    console.log(e.clientX, e.clientY);
+});
+```
+
+---
+
+## 10. contextmenu
+
+Occurs when the user right-clicks.
+
+```javascript
+box.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    console.log("Right Click");
+});
+```
+
 ---
 
 ## Keyboard Events
 
 | Event   | Description
-|---------+------------------
++---------+------------------
 | keydown | Key is pressed.
 | keyup   | Key is released.
+
+# Code Example -
+
+## 1. keydown
+
+Occurs when a key is pressed.
+
+```javascript
+document.addEventListener("keydown", (e) => {
+    console.log(e.key);
+});
+```
+
+---
+
+## 2. keyup
+
+Occurs when the key is released.
+
+```javascript
+document.addEventListener("keyup", (e) => {
+    console.log(e.key);
+});
+```
 
 ---
 
 ## Form Events
 
-| Event | Description |
-|--------|-------------|
-| submit | Form is submitted. |
-| input | Fires whenever input value changes. |
-| change | Fires after value changes and loses focus (for text input). |
-| focus | Input gains focus. |
-| blur | Input loses focus. |
-| reset | Form is reset. |
+| Event  | Description
++--------+-------------------------------------------------------------
+| submit | Form is submitted.
+| input  | Fires whenever input value changes.
+| change | Fires after value changes and loses focus (for text input).
+| focus  | Input gains focus.
+| blur   | Input loses focus.
+| reset  | Form is reset.
+
+# Code Example -
+
+## 1. input
+
+Occurs whenever the value changes.
+
+```javascript
+const input = document.getElementById("name");
+
+input.addEventListener("input", () => {
+    console.log(input.value);
+});
+```
+
+---
+
+## 2. change
+
+Occurs after the value changes and the element loses focus.
+
+```javascript
+input.addEventListener("change", () => {
+    console.log(input.value);
+});
+```
+
+---
+
+## 3. focus
+
+Occurs when an input gets focus.
+
+```javascript
+input.addEventListener("focus", () => {
+    console.log("Focused");
+});
+```
+
+---
+
+## 4. blur
+
+Occurs when an input loses focus.
+
+```javascript
+input.addEventListener("blur", () => {
+    console.log("Focus Lost");
+});
+```
+
+---
+
+## 5. submit
+
+Occurs when a form is submitted.
+
+```javascript
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("Form Submitted");
+});
+```
+
+---
+
+## 6. reset
+
+Occurs when a form is reset.
+
+```javascript
+form.addEventListener("reset", () => {
+    console.log("Form Reset");
+});
+```
 
 ---
 
 ## Window Events
 
-| Event | Description |
-|--------|-------------|
-| load | Page completely loads. |
-| resize | Browser window is resized. |
-| scroll | Page is scrolled. |
-| unload | Page is about to unload. |
+| Event  | Description
++--------+---------------------------
+| load   | Page completely loads.
+| resize | Browser window is resized.
+| scroll | Page is scrolled.
+| unload | Page is about to unload.
+
+# Code Example -
+
+## 1. load
+
+Occurs after the entire page has loaded.
+
+```javascript
+window.addEventListener("load", () => {
+    console.log("Page Loaded");
+});
+```
+---
+
+## 2. DOMContentLoaded
+
+Occurs when the HTML has been loaded (images may still be loading).
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM Ready");
+});
+```
 
 ---
+
+## 3. resize
+
+Occurs when the browser window is resized.
+
+```javascript
+window.addEventListener("resize", () => {
+    console.log(window.innerWidth);
+});
+```
+
+---
+
+## 4. scroll
+
+Occurs when the page is scrolled.
+
+```javascript
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+});
+```
+
+---
+
+## Clipboard Events
+
+| Event | Description
++-------+---------------------------------------------
+| copy  | Fires when the user copies selected content.
+| cut   | Fires when the user cuts selected content.
+| paste | Fires when the user pastes content.
+
+# Code Example -
+
+## 1. copy
+
+```javascript
+document.addEventListener("copy", () => {
+    console.log("Copied");
+});
+```
+
+---
+
+## 2. cut
+
+```javascript
+document.addEventListener("cut", () => {
+    console.log("Cut");
+});
+```
+
+---
+
+## 3. paste
+
+```javascript
+document.addEventListener("paste", () => {
+    console.log("Pasted");
+});
+```
+
+---
+
+## Drag & Drop Events
+
+| Event     | Description
+|-----------+--------------------------------------------------------------------
+| drag      | Fires continuously while an element is being dragged.
+| dragstart | Fires when dragging starts.
+| dragend   | Fires when dragging ends.
+| dragenter | Fires when a draggable element enters a valid drop target.
+| dragover  | Fires continuously while a draggable element is over a drop target.
+| dragleave | Fires when a draggable element leaves a drop target.
+| drop      | Fires when the dragged element is dropped onto a valid drop target.
+
+# Code Example -
+
+## 1. dragstart
+
+```javascript
+item.addEventListener("dragstart", () => {
+    console.log("Dragging Started");
+});
+```
+
+---
+
+## 2. dragend
+
+```javascript
+item.addEventListener("dragend", () => {
+    console.log("Dragging Ended");
+});
+```
+
+---
+
+## 3. dragover
+
+```javascript
+dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault();
+});
+```
+
+---
+
+## 4. drop
+
+```javascript
+dropZone.addEventListener("drop", () => {
+    console.log("Item Dropped");
+});
+```
+---
+
 
 # Ways to Attach Events
 
@@ -181,15 +551,15 @@ button.addEventListener("click", (e)=>{
 });
 ```
 
-| Property | Meaning |
-|----------|---------|
-| type | Type of event |
-| target | Actual element that triggered the event |
-| currentTarget | Element on which listener is attached |
-| clientX | Mouse X position |
-| clientY | Mouse Y position |
-| key | Key pressed |
-| code | Physical keyboard key |
+| Property      | Meaning
++---------------+----------------------------------------
+| type          | Type of event
+| target        | Actual element that triggered the event
+| currentTarget | Element on which listener is attached
+| clientX       | Mouse X position
+| clientY       | Mouse Y position
+| key           | Key pressed
+| code          | Physical keyboard key
 
 ---
 
@@ -399,14 +769,14 @@ document.addEventListener("mousemove",(e)=>{
 
 # Summary
 
-- Event → Action performed by user or browser.
-- Event Listener → Waits for an event.
-- Event Handler → Function executed after the event occurs.
-- Event Object → Information about the event.
-- preventDefault() → Stops default browser behavior.
-- stopPropagation() → Stops event bubbling/capturing.
-- Event Bubbling → Child → Parent.
-- Event Capturing → Parent → Child.
-- Event Delegation → Parent handles child events.
-- addEventListener() → Best way to attach events.
+- Event                 → Action performed by user or browser.
+- Event Listener        → Waits for an event.
+- Event Handler         → Function executed after the event occurs.
+- Event Object          → Information about the event.
+- preventDefault()      → Stops default browser behavior.
+- stopPropagation()     → Stops event bubbling/capturing.
+- Event Bubbling        → Child → Parent.
+- Event Capturing       → Parent → Child.
+- Event Delegation      → Parent handles child events.
+- addEventListener()    → Best way to attach events.
 - removeEventListener() → Removes an attached listener.

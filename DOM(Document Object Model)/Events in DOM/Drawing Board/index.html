@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="board">
+            <canvas id="drawCanvas"></canvas>
+        </div>
+        <div class="controls">
+            <button class="clear-btn" id="clearBtn">Clear</button>
+            <div class="control-group">
+                <label for="brushSize">Brush Size</label>
+                <input type="range" id="brushSize" min="2" max="50" value="12">
+            </div>
+            <div class="control-group">
+                <label for="colorPicker">Color</label>
+                <input type="color" id="colorPicker" class="color-input" value="#d72b2b">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
